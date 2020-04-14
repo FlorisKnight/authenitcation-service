@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5dead5e-9687-44a9-85a3-f13cbe783589" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mvn-entrypoint.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <workItem from="1586506607045" duration="4342000" />
       <workItem from="1586765290729" duration="3829000" />
       <workItem from="1586851528993" duration="1215000" />
-      <workItem from="1586864993978" duration="1248000" />
+      <workItem from="1586864993978" duration="1857000" />
     </task>
     <servers />
   </component>
