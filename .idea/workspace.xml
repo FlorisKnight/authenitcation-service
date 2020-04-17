@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5dead5e-9687-44a9-85a3-f13cbe783589" name="Default Changelist" comment="" />
+    <list default="true" id="a5dead5e-9687-44a9-85a3-f13cbe783589" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RestService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/PingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/RegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dbal/login/ILoginRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dbal/login/LoginRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dbal/register/IRegisterRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dbal/register/RegisterRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handlers/login/ILoginHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handlers/login/LoginHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handlers/register/IRegisterHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handlers/register/RegisterHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logging/ILogger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logging/LogLevel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logging/LogMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logging/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Reply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/User.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,10 +59,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../nooty-gateway" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -80,7 +102,7 @@
       <workItem from="1586765290729" duration="3829000" />
       <workItem from="1586851528993" duration="1215000" />
       <workItem from="1586864993978" duration="2494000" />
-      <workItem from="1587110100947" duration="13501000" />
+      <workItem from="1587110100947" duration="14350000" />
     </task>
     <servers />
   </component>
@@ -144,9 +166,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1586427515219" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1586430536972">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1459" y="62" key="SettingsEditor" timestamp="1587126919202">
+      <screen x="-1920" y="-119" width="1920" height="1160" />
     </state>
+    <state x="-1459" y="62" key="SettingsEditor/-1920.-119.1920.1160/0.0.1920.1040@-1920.-119.1920.1160" timestamp="1587126919202" />
     <state x="461" y="162" key="SettingsEditor/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1586430536972" />
   </component>
   <component name="XDebuggerManager">
