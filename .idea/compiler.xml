@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="authenitcation-service" options="-parameters" />
+      <module name="authenitcation-service" options="" />
     </option>
   </component>
 </project>

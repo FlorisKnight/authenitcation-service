@@ -1,15 +1,19 @@
-#
-# Build stage
-#
-FROM adoptopenjdk:8-jdk-openj9-bionic AS build
-COPY src /home/app/src
-COPY pom.xml /home/app
-RUN mvn -f /home/app/pom.xml clean package
+FROM java:8
 
-#
-# Package stage
-#
-FROM adoptopenjdk:8-jdk-openj9-bionic
-COPY --from=build /home/app/target/authentication-service-1.0-SNAPSHOT.jar /usr/local/lib/authentication-service-1.0-SNAPSHOT.jar
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/local/lib/authentication-service-1.0-SNAPSHOT.jar"]
+# Install maven
+RUN apt-get update
+RUN apt-get install -y maven
+
+WORKDIR /code
+
+# Prepare by downloading dependencies
+ADD pom.xml /code/pom.xml
+RUN ["mvn", "dependency:resolve"]
+RUN ["mvn", "verify"]
+
+# Adding source, compile and package into a fat jar
+ADD src /code/src
+RUN ["mvn", "package"]
+
+EXPOSE 4567
+CMD ["/usr/lib/jvm/java-8-openjdk-amd64/bin/java", "-jar", "target/authentication-service.jar"]
