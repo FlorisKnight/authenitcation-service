@@ -10,6 +10,6 @@ RUN mvn -f /home/app/pom.xml clean package
 # Package stage
 #
 FROM openjdk:11-jre-slim
-COPY --from=build /home/app/target/authentication-service-1.0-SNAPSHOT.jar /usr/local/lib/authentication-service-1.0-SNAPSHOT.jar
+COPY --from=build /home/app/target/authentication-1.0-SNAPSHOT.jar /usr/local/lib/authentication-1.0-SNAPSHOT.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/local/lib/authentication-service-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/authentication-1.0-SNAPSHOT.jar"]

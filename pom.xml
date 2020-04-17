@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>nooty</groupId>
-    <artifactId>authenitcation-service</artifactId>
+    <artifactId>authenitcation</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>authentication-service</name>
+    <name>authentication</name>
 
     <dependencies>
         <dependency>
@@ -76,7 +76,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <finalName>authentication-service</finalName>
+                    <finalName>authentication</finalName>
                 </configuration>
             </plugin>
             <plugin>
