@@ -16,6 +16,5 @@ RUN ["mvn", "verify"]
 ADD src /code/src
 RUN ["mvn", "package"]
 
-COPY --from=build /home/app/target/authentication-service-1.0-SNAPSHOT.jar /usr/local/lib/authentication-service-1.0-SNAPSHOT.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/local/lib/authentication-service-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/home/app/target/gateway-0.0.1-SNAPSHOT.jar"]
