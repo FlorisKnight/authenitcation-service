@@ -1,4 +1,5 @@
-FROM java:8
+
+FROM adoptopenjdk:8-jdk-openj9-bionic
 
 # Install maven
 RUN apt-get update
@@ -16,4 +17,4 @@ ADD src /code/src
 RUN ["mvn", "package"]
 
 EXPOSE 4567
-CMD ["/usr/lib/jvm/java-8-openjdk-amd64/bin/java", "-jar", "target/authentication-service.jar"]
+CMD ["jar", "-jar", "target/authentication-service.jar"]
