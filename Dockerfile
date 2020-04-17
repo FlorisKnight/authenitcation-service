@@ -1,20 +1,15 @@
+#
+# Build stage
+#
+FROM maven:3.6.0-jdk-11-slim AS build
+COPY src /home/app/src
+COPY pom.xml /home/app
+RUN mvn -f /home/app/pom.xml clean package
 
-FROM adoptopenjdk:8-jdk-openj9-bionic
-
-# Install maven
-RUN apt-get update
-RUN apt-get install -y maven
-
-WORKDIR /code
-
-# Prepare by downloading dependencies
-ADD pom.xml /code/pom.xml
-RUN ["mvn", "dependency:resolve"]
-RUN ["mvn", "verify"]
-
-# Adding source, compile and package into a fat jar
-ADD src /code/src
-RUN ["mvn", "package"]
-
+#
+# Package stage
+#
+FROM openjdk:11-jre-slim
+COPY --from=build /home/app/target/authentication-service-1.0-SNAPSHOT.jar /usr/local/lib/authentication-service-1.0-SNAPSHOT.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/home/app/target/authentication-service-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/authentication-service-1.0-SNAPSHOT.jar"]
