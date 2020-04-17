@@ -4,6 +4,7 @@
 FROM adoptopenjdk:8-jdk-openj9-bionic AS build
 COPY src /home/app/src
 COPY pom.xml /home/app
+RUN wget http://www.us.apache.org/dist/tomcat/tomcat-6/v6.0.44/bin/apache-tomcat-6.0.44.tar.gz
 RUN mvn -f /home/app/pom.xml clean package
 
 #
