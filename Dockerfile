@@ -17,4 +17,4 @@ ADD src /code/src
 RUN ["mvn", "package"]
 
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/home/app/target/gateway-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/home/app/target/authentication-service-1.0-SNAPSHOT.jar"]
