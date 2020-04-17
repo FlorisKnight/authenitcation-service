@@ -20,5 +20,4 @@ ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 COPY settings-docker.xml /usr/share/maven/ref/
 
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-CMD ["mvn"]
+CMD ["/usr/local/app/bin/docker-entrypoint.sh"]
