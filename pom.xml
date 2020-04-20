@@ -88,7 +88,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>RestService.class</mainClass>
+                            <mainClass>com.nooty.authentication.RestService</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
