@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5dead5e-9687-44a9-85a3-f13cbe783589" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dbal/user/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handlers/user/IUserHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handlers/user/UserHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +98,7 @@
       <workItem from="1587307163172" duration="2061000" />
       <workItem from="1587309350255" duration="4860000" />
       <workItem from="1587370335401" duration="4951000" />
-      <workItem from="1587455896463" duration="1858000" />
+      <workItem from="1587455896463" duration="2823000" />
     </task>
     <servers />
   </component>
