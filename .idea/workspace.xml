@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5dead5e-9687-44a9-85a3-f13cbe783589" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dbal/user/UserRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handlers/user/IUserHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handlers/user/UserHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,21 +44,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/handlers/user" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\School\S6\authenitcation-service" />
-      <recent name="D:\School\S6\authenitcation-service\src\main\resources" />
-      <recent name="D:\School\S6\authenitcation-service\src\main\java" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\School\S6\authenitcation-service" />
       <recent name="D:\School\S6\authenitcation-service\src\main\java\models" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dbal.user" />
+      <recent name="controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\School\S6\authenitcation-service\src\main\java\handlers\user" />
+      <recent name="D:\School\S6\authenitcation-service\src\main\java\handlers" />
+      <recent name="D:\School\S6\authenitcation-service" />
+      <recent name="D:\School\S6\authenitcation-service\src\main\resources" />
+      <recent name="D:\School\S6\authenitcation-service\src\main\java" />
     </key>
   </component>
   <component name="RunManager">
@@ -92,7 +102,7 @@
       <workItem from="1587307163172" duration="2061000" />
       <workItem from="1587309350255" duration="4860000" />
       <workItem from="1587370335401" duration="4951000" />
-      <workItem from="1587455896463" duration="696000" />
+      <workItem from="1587455896463" duration="1858000" />
     </task>
     <servers />
   </component>
@@ -116,13 +126,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1586507731072" />
-    <state x="657" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586507494348">
+    <state x="657" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587458690206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="657" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1586507494348" />
-    <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1587114233176">
+    <state x="657" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587458690206" />
+    <state x="704" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587458720455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="704" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587458720455" />
+    <state x="-1159" y="262" key="FileChooserDialogImpl" timestamp="1587457979107">
+      <screen x="-1920" y="-119" width="1920" height="1160" />
+    </state>
+    <state x="-1159" y="262" key="FileChooserDialogImpl/-1920.-119.1920.1160/0.0.1920.1040@-1920.-119.1920.1160" timestamp="1587457979107" />
     <state x="761" y="342" key="FileChooserDialogImpl/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587114233176" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1587375746348">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -169,6 +184,10 @@
     </state>
     <state x="-1459" y="62" key="SettingsEditor/-1920.-119.1920.1160/0.0.1920.1040@-1920.-119.1920.1160" timestamp="1587126919202" />
     <state x="461" y="162" key="SettingsEditor/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587305365785" />
+    <state x="-1578" y="156" key="new project wizard" timestamp="1587457967125">
+      <screen x="-1920" y="-119" width="1920" height="1160" />
+    </state>
+    <state x="-1578" y="156" key="new project wizard/-1920.-119.1920.1160/0.0.1920.1040@-1920.-119.1920.1160" timestamp="1587457967125" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587310848364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
