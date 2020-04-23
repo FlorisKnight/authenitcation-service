@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5dead5e-9687-44a9-85a3-f13cbe783589" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dbal/DBconnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handlers/PasswordStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbal/login/ILoginRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbal/login/LoginRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbal/login/LoginRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbal/register/IRegisterRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbal/register/RegisterRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbal/register/RegisterRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/login/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/login/LoginHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/register/IRegisterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/register/IRegisterHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/register/RegisterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/register/RegisterHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +74,14 @@
       <recent name="D:\School\S6\authenitcation-service\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.RestService (1)">
+    <configuration name="RestService (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RestService" />
+      <module name="authenitcation-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RestService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.RestService" />
       <module name="authenitcation-service" />
@@ -73,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RestService (1)" />
         <item itemvalue="Application.RestService" />
       </list>
     </recent_temporary>
@@ -98,7 +117,10 @@
       <workItem from="1587307163172" duration="2061000" />
       <workItem from="1587309350255" duration="4860000" />
       <workItem from="1587370335401" duration="4951000" />
-      <workItem from="1587455896463" duration="2823000" />
+      <workItem from="1587455896463" duration="3518000" />
+      <workItem from="1587461977944" duration="543000" />
+      <workItem from="1587462858487" duration="616000" />
+      <workItem from="1587630908613" duration="11797000" />
     </task>
     <servers />
   </component>
@@ -118,10 +140,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="323" key="#com.intellij.fileTypes.FileTypeChooser/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1586430714248" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1586507731072">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1587643108545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1586507731072" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587643108545" />
     <state x="657" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587458690206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -135,26 +157,26 @@
     </state>
     <state x="-1159" y="262" key="FileChooserDialogImpl/-1920.-119.1920.1160/0.0.1920.1040@-1920.-119.1920.1160" timestamp="1587457979107" />
     <state x="761" y="342" key="FileChooserDialogImpl/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587114233176" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1587375746348">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1587647715713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/-1920.-119.1920.1160/0.0.1920.1040@-1920.-119.1920.1160" timestamp="1587370732427" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587375746348" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1587375746347">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587647715713" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1587647715713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/-1920.-119.1920.1160/0.0.1920.1040@-1920.-119.1920.1160" timestamp="1587370732427" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587375746347" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1587375746347">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587647715713" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1587647715713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/-1920.-119.1920.1160/0.0.1920.1040@-1920.-119.1920.1160" timestamp="1587370732426" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587375746347" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1587375746347">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587647715713" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1587647715713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/-1920.-119.1920.1160/0.0.1920.1040@-1920.-119.1920.1160" timestamp="1587370732427" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587375746347" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/-1920.-119.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1587647715713" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586432794018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -2,6 +2,7 @@ package handlers.login;
 
 import com.google.gson.Gson;
 import dbal.login.LoginRepo;
+import handlers.PasswordStorage;
 import logging.Logger;
 import models.Reply;
 import models.Status;
@@ -17,11 +18,13 @@ public class LoginHandler implements ILoginHandler {
     private LoginRepo repo;
     JSONParser jsonParser;
     Gson gson;
+    PasswordStorage passwordStorage;
 
     public LoginHandler(LoginRepo repo) {
         this.repo = repo;
         this.jsonParser = new JSONParser();
         gson = new Gson();
+        this.passwordStorage = new PasswordStorage();
     }
 
     public Reply login(String data) {
@@ -35,18 +38,24 @@ public class LoginHandler implements ILoginHandler {
             String password = (String) entity.get("password");
             System.out.println(password);
 
-            User u = repo.checkLogin(username, password);
-            if (u != null)
-                return messageCreator(Status.OK, u);
-            else
-                return messageCreator(Status.NOAUTH, u);
+            String storedPassword = repo.getPassword(username);
+            System.out.println(storedPassword);
+            if (passwordStorage.verifyPassword(password, storedPassword))
+            {
+                User u = repo.login(username);
+                if (u != null)
+                    return messageCreator(Status.OK, u);
+            } else
+                return messageCreator(Status.NOACCESS, new User());
         } catch (ParseException e) {
             Logger.getInstance().log(e);
             return messageCreator(Status.ERROR, new User());
         } catch (Exception ex) {
             Logger.getInstance().log(ex);
+            System.out.println(ex);
             return messageCreator(Status.ERROR, new User());
         }
+        return messageCreator(Status.ERROR, new User());
     }
 
     private Reply messageCreator(Status s, Object data) {
